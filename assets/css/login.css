@@ -1,0 +1,145 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+	background-color: #19181e;
+	font-family: "Roboto", sans-serif;
+}
+
+/********************************************** Estilizando Login **********************************************/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0 10px;
+}
+
+.logo {
+	height: 221px;
+	width: 310px;
+}
+
+.container-login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 325px;
+	width: 460px;
+	max-width: 100%;
+	padding: 25px 40px;
+	margin-bottom: 40px;
+	background-color: #2e2c3a;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.controls a {
+	width: 50%;
+	font-size: 22px;
+	text-align: center;
+	color: #ffffff;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.controls .active {
+	color: #e74946;
+	border-bottom: 1px solid #e74946;
+}
+
+.login {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.cadastro {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.form {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.form_group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form_group label {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.form_group input {
+	border: 0;
+	border-bottom: 1px solid #ffffff;
+	background-color: #2e2c3a;
+	margin-top: 8px;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 0 3px 0;
+}
+
+.form button[type="button"] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+	font-size: 20px;
+	border: 0;
+	padding: 5px;
+	background-color: #e74946;
+	color: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+
+@media screen and (max-height: 500px) {
+	.container {
+		height: auto;
+	}
+}
+
+/********************************************** Alerta **********************************************/
+.alerta{
+	text-align: center;
+	width: 460px;
+	max-width: 100%;
+	padding: 10px;
+	color: #fff;
+	background-color: #2e2c3a;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.alerta i{
+	float: right;
+	cursor: pointer;
+}
+
+.alerta i:hover{
+	color: #ddd;
+}
+
+.borda-vermelha{
+	border: 2px solid #e74946;
+}
+
+.borda-verde{
+	border: 2px solid green;
+}

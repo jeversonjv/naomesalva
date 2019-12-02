@@ -1,0 +1,48 @@
+.cursos {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	width: 720px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.curso {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #2e2c3a;
+	width: 250px;
+	height: 180px;
+	margin: 0 auto;
+	margin-bottom: 45px;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+
+.curso:hover {
+	box-shadow: 0 4px 4px 0 rgb(231, 73, 70), 0 3px 20px 0 rgb(231, 73, 70);
+}
+
+.titulo {
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(231, 73, 70);
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.descricao {
+	font-size: 14px;
+	padding: 5px;
+	color: #fff;
+}
+
+@media screen and (max-width: 575px) {
+	.cursos {
+		grid-template-columns: 1fr;
+	}
+}
